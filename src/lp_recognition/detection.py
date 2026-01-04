@@ -22,7 +22,7 @@ def find_plate_contours(processed: np.ndarray) -> List[np.ndarray]:
 def extract_plate(image: np.ndarray, contour: np.ndarray) -> Tuple[np.ndarray, Tuple[int, int, int, int]]:
     rect = cv2.minAreaRect(contour)
     box = cv2.boxPoints(rect)
-    box = np.int0(box)
+    box = box.astype(int)
 
     width = int(rect[1][0])
     height = int(rect[1][1])
