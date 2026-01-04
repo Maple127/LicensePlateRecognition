@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.idea/
+*.iml
+
+# Visual artifacts and outputs
+src/main/resources/output/
+
+# User-provided images keep placeholder only
+src/main/resources/image/*
+!src/main/resources/image/.gitkeep
